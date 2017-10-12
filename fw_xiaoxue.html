@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>aframe-href-component</title>
+    <script src="js/aframe.min.js"></script>
+  </head>
+  <body>
+  	<a-assets>
+    	<a-asset-item id="file5-obj" src="models/file5.obj"></a-asset-item>
+    	<a-asset-item id="file5-mtl" src="models/file5.mtl"></a-asset-item>
+    	
+    	
+    	</a-assets>
+    <a-scene cursor="rayOrigin: mouse">
+    	
+    	
+    	
+    	<a-entity  obj-model="obj: #file5-obj; mtl: #file5-mtl" position="0 1.8 -4" scale="0.02 0.02 0.02"></a-entity>
+    	
+    	
+   		<a-entity position="0 1.8 4">
+      <a-camera id="camera" camera look-controls wasd-controls>
+    <!--    不用光标  <a-cursor color="#4CC3D9"></a-cursor>-->
+        </a-camera>
+      </a-entity>
+
+
+    
+
+      <a-sky color="#FFFF00"></a-sky>
+    </a-scene>
+  </body>
+</html>
